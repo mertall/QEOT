@@ -1,7 +1,16 @@
 from nltk.parse import CoreNLPParser
 import os
+#need 7zip java python Stanford Core NLP
+##cd ~
+#python -m wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-02-27.zip
+#7z e stanford-corenlp-full-2018-02-27.zip
+#cd stanford-corenlp-full-2018-02-27
+#then run 
+#java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer \
+#-preload tokenize,ssplit,pos,lemma,ner,parse,depparse \
+#-status_port 9000 -port 9000 -timeout 15000 
 def parse_text():
-    folder = os.listdir(r'C:\Users\mridu\OneDrive\Documents\VMware\cloud_documentation')
+    folder = os.listdir(r'C:\Users\mridu\OneDrive\Documents\PythonScripts\VMware\QEOT\cloud_documentation')
     for efile in folder :
         with open(efile) as f :
             data = f.read()
@@ -14,14 +23,4 @@ def parse_text():
             print(tokens)
             print(pos)
             print(ner)
-##need to update corenlp also access corenlp via java after running this
-##cd ~
-#wget http://nlp.stanford.edu/software/stanford-corenlp-full-2018-02-27.zip
-#unzip stanford-corenlp-full-2018-02-27.zip
-#cd stanford-corenlp-full-2018-02-27
-#then run 
-#java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer \
-#-preload tokenize,ssplit,pos,lemma,ner,parse,depparse \
-#-status_port 9000 -port 9000 -timeout 15000 & 
-#then run parse text...
 parse_text()

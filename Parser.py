@@ -30,23 +30,21 @@ def parse_text_stanford():
 import spacy
 import os
 folder = os.listdir(r'C:\Users\mridu\OneDrive\Documents\VMware\cloud_documentation')
-nlp = spacy.load('en_core_web_lg')
-
+nlp = spacy.load('en_core_web_lg') ## lg lets us use large documents
+tokens = []
+pos = []
+dep = []
+sim = []
+hasvector = []
+vectornorm = []
+isoov = []
 for efile in folder:
     with open(efile,'r') as f:
         data = f.read()
-        print(len(data))
         doc = nlp(data)
-        tokens = []
-        pos = []
-        dep = []
-        sim = []
-        hasvector = []
-        vectornorm = []
-        isoov = []
         for token in doc:
             tokens = token.append(token.text)
-            pos = pos.append(toke.pos_)
+            pos = pos.append(token.pos_)
             dep = dep.append(token.dep_)
             hasvector = hasvector.append(token.has_vector)
             vectornorm = vectornorm.append(token.vector_norm)
@@ -57,13 +55,9 @@ for efile in folder:
         i = i + 1
 
 ##NEXT step find similarity between docs
-i = 1
-j = 2
-for doc1 in cloud_dict[i].:
-    for doc2 in cloud_dict[j]
-        sim = sim.append(token)
+## compare all vector norms with each other
+## compare has vectors with each others
+## what to do i do with dependancy 
 
 
-
-
-##LENGHT OF DOC IS TOO LONG< FIND HOW OT SHORTREN DOCS OR INCREASE INPUT SIZE
+### what to do with oov... could do something cool... which documents are the hardest to understand...

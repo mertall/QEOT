@@ -1,10 +1,10 @@
 # QEOT
-Qualitative Evaluation of Text for Cleaner Knowledge Base from Web Pages
- Unfinished chatbot model...
- 
- Features were extracted from a database from VMWare (NDA so cannot share)...
- 
- Chatbot could not be developed due to large amount of data and lack of computational power, as the work was done remote, internationally. 
+Qualitative Evaluation of Text for Cleaner Knowledge Base
+
+Created a universal parser, that can be used by any UNIX and LINUX system.
+
+The commented parser function can only be run on Linux.
+Also developed an 'understandbaility' metric. 
  
  Features need to be loaded into a cloud based chatbot model, of any choosing. We were using DrQA from Facebook, but could not get it set up properly due to dependency issues.
  

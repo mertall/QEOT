@@ -3,7 +3,7 @@ Qualitative Evaluation of Text for Cleaner Knowledge Base
 
 Created 2 preprocessing models, that can be used by any UNIX and LINUX system.
 
-Also developed an 'understandbaility' metric. 
+Also developed an 'understandability' metric. 
  
  Features need to be loaded into a cloud based chatbot model, of any choosing. We were using DrQA from Facebook, but could not get it set up properly due to dependency issues.
  

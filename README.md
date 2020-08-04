@@ -1,7 +1,7 @@
 # QEOT
 Qualitative Evaluation of Text for Cleaner Knowledge Base
 
-Created 2 preprocessing models, that can be used by any UNIX and LINUX system.
+Created 2 preprocessing models, that can be used by any UNIX and DOS system.
 
 Also developed an 'understandability' metric. 
  
